@@ -112,8 +112,8 @@
 				<!-- 추천 서브 메뉴 -->
 				<div class="to_sub_menu sub_menu2">
 					<ul class=" ">
-						<li class="toSub_menu"><a href="${ pageContext.request.contextPath }/resources/pick/foodList.jsp">음식</a></li>
-						<li class="toSub_menu"><a href="${ pageContext.request.contextPath }/resources/pick/tourList.jsp">관광</a></li>
+						<li class="toSub_menu"><a href="${ pageContext.request.contextPath }/food">음식</a></li>
+						<li class="toSub_menu"><a href="${ pageContext.request.contextPath }/tour">관광</a></li>
 						<li class="toSub_menu"><a href="${ pageContext.request.contextPath }/resources/matching/accompanyAfter.jsp">후기</a></li>
 					</ul>
 					<!-- 최신 동행글 3개 -->
