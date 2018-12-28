@@ -65,11 +65,11 @@
 	<header id="headerW">
 		<nav class="topMenu_nav">
 			<ul class="top_menu1">
-				<li class="top_menu "><a href="">동행</a></li>
+				<li class="top_menu"><a href="${ pageContext.request.contextPath }/resources/matching/matching.jsp">동행</a></li>
 				<!-- 동행 서브 메뉴 -->
 				<div class="to_sub_menu sub_menu1">
-					<ul class=" ">
-						<li class="toSub_menu"><a href="${ pageContext.request.contextPath }">동행 글 보기</a></li>
+					<ul class="">
+						<li class="toSub_menu"><a href="${ pageContext.request.contextPath }/resources/matching/matching.jsp">동행 글 보기</a></li>
 						<li class="toSub_menu"><a href="${ pageContext.request.contextPath }/resources/matching/accompanyWrite.jsp">동행 글 쓰기</a></li>
 					</ul>
 					<!-- 최신 동행글 3개 -->

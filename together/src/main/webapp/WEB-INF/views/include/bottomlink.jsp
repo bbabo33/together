@@ -10,7 +10,12 @@
 <script src="${pageContext.request.contextPath }/resources/js/jquery.magnific-popup.min.js"></script>
 <script src="${pageContext.request.contextPath }/resources/js/aos.js"></script>
 <script src="${pageContext.request.contextPath }/resources/js/jquery.animateNumber.min.js"></script>
+<%-- <script src="${pageContext.request.contextPath }/resources/js/bootstrap-datepicker.js"></script> --%>
+<%-- <script src="${pageContext.request.contextPath }/resources/js/jquery.timepicker.min.js"></script> --%>
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script> -->
 <script src="${pageContext.request.contextPath }/resources/js/scrollax.min.js"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
+<%-- <script src="${ pageContext.request.contextPath }/resources/js/google-map.js"></script> --%>
 <script src="${ pageContext.request.contextPath }/resources/js/main.js"></script>
 
 <!-- 부트스트랩 사용하기 위한 script -->
@@ -19,3 +24,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 <script src="${pageContext.request.contextPath }/resources/js/jquery-3.3.1.min.js"></script>
+
+
