@@ -28,8 +28,8 @@
 			<jsp:include page="/WEB-INF/views/include/topMenuMo.jsp" /> --%>
 			
 			<!-- main content -->
-			<%-- <jsp:include page="/WEB-INF/views/include/main.jsp" /> --%>
-	    	<jsp:include page="/WEB-INF/views/include/IntroduceMain.jsp" />
+			<jsp:include page="/WEB-INF/views/include/IntroduceMain.jsp" />
+	    
 		    <!-- footer  -->
 		    <%@ include file="/WEB-INF/views/include/footer.jsp"%>
     

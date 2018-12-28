@@ -2,6 +2,10 @@
 body, h3 {
 	font-family: 'Nanum Gothic','Noto Sans KR', sans-serif;
 }
+.font_nanum {
+	font-family: 'Nanum Gothic','Noto Sans KR', sans-serif !important;
+/* 	font-family: 'Nanum Gothic Coding', 'Nanum Gothic','Noto Sans KR', sans-serif !important; */
+}
 /**************** aside *******************/
 .profile_img {
 	width: 185px;
@@ -57,7 +61,6 @@ body, h3 {
     font-size: 14px;
     font-weight: 500;
 }
-
 /**************** topMenu *******************/
 @media (min-width: 992px){
 	#headerW {
@@ -232,7 +235,6 @@ body, h3 {
 .hFixed .topMenu_nav ul .top_menu {
 	top:15px;
 }
-
 
 .hFixed .top_sapn {
     padding: 17px 0 13px 10px;
@@ -584,6 +586,7 @@ select::-ms-expand {
   border: none;
 }
 
+
 /* IntroduceMain 메인 페이지 */
 @media screen and (min-width: 1400px){
 	.matchingMainImg{
@@ -663,3 +666,34 @@ select::-ms-expand {
     color: #cccccc;
 }
 
+.main_content {
+	color: #333;
+}
+.main_content p {
+	
+	font-size: 15px;
+}
+.main_content p:first-child {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 600;
+}
+.main_content ul {
+}
+.main_content ul li {
+    margin-bottom: 5px;
+    list-style: none;
+}
+.main_content ul li:before {
+	background: url("/together/resources/images/main_sp.png") no-repeat;
+	content: '';
+	width: 200px;
+	height: 200px;
+	display: block;
+}
+.main_content ul li:nth-child(1):before {
+	background-position: 0 0;
+}
+.main_content ul li span {
+    color: #c74118;
+}

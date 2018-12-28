@@ -9,12 +9,49 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <%@ include file="/WEB-INF/views/include/toplink.jsp"%>
 
+<!-- Timepicker 관련
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+
+
+제이쿼리 datepicker 관련 
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+ 제이쿼리 timepicker 
+<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+ -->
+ 
+ 
+
+<!-- 제이쿼리 구버전과 최신버전의 혼용을 위한 쿼리소스 --> 
+<script src="${pageContext.request.contextPath }/resources/js/jquery-migrate-3.0.1.min.js"></script>
+<!-- migrate end -->
+
 <!-- 카카오 맵 api -->
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5bf9ccbd97a21e86fc6689488b54cd2e"></script>
 
-<!-- date,time picker css-->
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/jquery.datetimepicker.min.css"/>
-
+<script>
+		
+	$(document).ready(function(){
+	    
+		/* 제이쿼리 datepicker 관련 
+		$("#datepicker1, #datepicker2").datepicker({
+			dateFormat: 'yy-mm-dd'
+		}); */
+		
+		$('#timepicker').timepicker({
+		    timeFormat: 'h:mm p',
+		    interval: 15,		 
+		    startTime: '00:00',
+		    dynamic: false,
+		    dropdown: true,
+		    scrollbar: true
+		});
+	});
+	
+</script>
 </head>
 <body>
 	<div id="colorlib-page">
@@ -31,7 +68,7 @@
 		<!-- main, footer --><!-- 동행게시글 쓰기 폼 -->
 		<div id="colorlib-main">
 			<!-- 모바일 헤더  -->
-			<jsp:include page="/WEB-INF/views/include/topMenuMo.jsp" />
+			<%-- <jsp:include page="/WEB-INF/views/include/topMenuMo.jsp" /> --%>
 		
 			<section class="ftco-section">
 		    	<div class="container">
@@ -59,6 +96,7 @@
 				    					<div class="form-travelSpot">
 				    						<div id="map"></div>
 				    					</div>
+				    				
 			    					
 					    				<!-- 지도 api , id='map' 인 div 보다 밑에 있어야 함  -->
 					    				<script>
@@ -70,21 +108,20 @@
 									
 											var map = new daum.maps.Map(container, options);
 										</script>
-										
 										<div>
 			    							<div class="form-travelSpot">추가된 장소</div>
 			    							<div class="form-travelSpot"><input type="text" placeholder="지도 네임 들어갈 자리"></div> 
 			    						</div>
 										<div class="datePakage">
-						    				<div class="form-travelSpot"></div>
+						    				<div class="form-travelSpot">여행일정</div>
 						    				<dl>
-						    					<dt class="form-travelSpot"> 여행일정 </dt>
-						    					<dd class="form-travelSpot">타인과의 만남입니다. 신중하게 선택해주세요.</dd>
+						    					<dt class="form-travelSpot"> Start </dt>
+						    					<dd class="form-travelSpot"> <input type="text" id="datepicker1" class="accompanyWrite" size="10"></dd>
 						    				</dl>
 						    				<dl>    
-						    				    <dt class="form-travelSpot"> 동행날짜 </dt>
-						    				    <dd class="form-travelSpot"><input type="text" id="datepicker1" class="accompanyWrite" size="10"></dd> 
-						    				</dl> 
+						    				    <dt class="form-travelSpot"> End </dt>
+						    				    <dd class="form-travelSpot"><input type="text" id="datepicker2" class="accompanyWrite" size="10"></dd> 
+						    				</dl>
 						    				<dl>
 						    					<dt class="form-travelSpot">동행시간</dt>				 	
 					    						<dd class="form-travelSpot"><input type="text" id="timepicker" class="accompanyWrite" size="10"> </dd>
@@ -124,27 +161,5 @@
 				stroke-width="4" stroke-miterlimit="10" stroke="#e89981" /></svg>
 	</div>		
 	<%@ include file="/WEB-INF/views/include/bottomlink.jsp"%>
-	
-<script src="${pageContext.request.contextPath}/resources/js/jquery.datetimepicker.js"></script>
-<script>
-	
-	$(document).ready(function() {
-		$('#datepicker1').datetimepicker({
-			 format:'Y-m-d',	//년, 월, 일만 나오게
-		     timepicker:false,	//시간 안나오게
-		     minDate:'-1970/01/01'	//오늘부터 캘린더 픽 할 수 있게 만듦
-		     
-		});
-		
-		$('#timepicker').datetimepicker({
-			format:'H:i',		// 시간, 분 
-			datepicker:false,	//달력 안나오게
-			step : 15,
-			
-		});
-    });
-	
-</script>
-
 </body>
 </html>

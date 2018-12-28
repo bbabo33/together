@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/css/magnific-popup.css">
 <link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/css/aos.css">
 <link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/css/ionicons.min.css">
+<%-- <link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/css/bootstrap-datepicker.css"> --%>
+<%-- <link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/css/jquery.timepicker.css"> --%>
 <link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/css/flaticon.css">
 <link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/css/icomoon.css">
 <link rel="stylesheet" href="${ pageContext.request.contextPath }/resources/css/style.css">
@@ -24,6 +26,7 @@
 <!-- font -->
 <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="stylesheet"> -->
 
 <!-- 부트스트랩 사용하기 위한 css -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
