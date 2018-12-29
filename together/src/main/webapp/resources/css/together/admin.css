@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* admin */
+.topMenuAdmin {
+	width: 100% !important;
+}
+
+.chartdiv {
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+h4 {
+	
+}
+.piecanvas{
+	width: 50%;
+	float:left;
+}
+@media (max-width: 650px) {
+	.piecanvas{
+		display:none;
+	}
+	
+}
+.topMenuAdmin {
+	width: 100%;
+}
+/* userInfo */
+.scrolltable {
+	height:500px;
+	width:100%;
+    display: block;
+    overflow: auto;
+    float:none;
+}
+.acent{
+	text-align: center;
+	float: none;
+}
+th{
+	color: black;
+}
+/* vegetarian_write */
+.smbtn {
+	float: right;
+}
+
+.fullip {
+	width: 100%;
+}
+
+.adradd {
+	width: 89% !important;
+}
+
+.adrbtn {
+	width: 9%;
+	padding-top: 3px !important;
+	padding-bottom: 3px !important;
+	padding-right: 1% !important;
+	padding-left: 1% !important; margin-bottom : 3px !important;
+	margin-left: 1% !important;
+	margin-bottom: 3px !important;
+}
+
+@media ( min-width :700px) and (max-width:1206px) {
+	.adradd {
+		width: 85% !important;
+	}
+	.adrbtn {
+		width: 13%;
+		margin-left: 3px !important;
+	}
+}
+
+@media ( max-width :699px) {
+	.adradd {
+		width: 68% !important;
+		margin-left: 0 !important;
+	}
+	.adrbtn {
+		width: 28%;
+		margin-left: 1% !important;
+	}
+}
+
