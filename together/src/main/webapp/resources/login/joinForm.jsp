@@ -61,7 +61,7 @@
 					
 					<div class="col-md-6 order-md-last pr-md-5 padding_r15" style="padding-right: 15px !important;">
 						<!-- <form name="inputForm" onsubmit="return checkData()" action="#"> -->
-						<form name="inputForm" action="${ pageContext.request.contextPath }">
+						<form name="inputForm" action="${ pageContext.request.contextPath }/join/doJoin" method="post">
 							<p class="join_title">이름</p>
 							<div class="form-group">
 								<input type="text" class="form-control" placeholder="Your Name" name="name">
@@ -124,7 +124,8 @@
 								<label for="no">NO</label>
 							</div>
 							<div class="form-group sub_Btn">
-								<input type="button" value="join" class="btn btn-primary py-3 px-5"  data-toggle="modal" data-target="#exampleModal">
+								<!-- <input type="button" value="join" class="btn btn-primary py-3 px-5"  data-toggle="modal" data-target="#exampleModal"> -->
+								<input type="submit" value="join" class="btn btn-primary py-3 px-5"  data-toggle="modal" data-target="#exampleModal">
 							</div>
 						</form>
 

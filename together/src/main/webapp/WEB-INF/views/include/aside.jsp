@@ -63,7 +63,7 @@
 	<nav id="colorlib-main-menu" role="navigation">
 		<ul>
 			<li><a href="${ pageContext.request.contextPath }/resources/login/login.jsp"">login</a></li>
-			<li><a href="${ pageContext.request.contextPath }/resources/login/joinForm.jsp">join</a></li>
+			<li><a href="${ pageContext.request.contextPath }/join/joinForm">join</a></li>
 			<li id="mypage" data-click-state="1" class="mypage"><a>mypage</a></li>
 			<div id="mypage_de" class="display_n">
 				<ul>
