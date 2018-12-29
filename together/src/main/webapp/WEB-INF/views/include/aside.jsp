@@ -71,7 +71,7 @@
 					<li><a href="${ pageContext.request.contextPath }/resources/mypage/noti.jsp">알림</a></li>
 					<li><a href="${ pageContext.request.contextPath }/resources/mypage/talk.jsp">쪽지함</a></li>
 					<li><a href="#">스템프</a></li>
-					<li><a href="${ pageContext.request.contextPath }/resources/mypage/pwCheck.jsp">내 정보 수정</a></li>
+					<li><a href="${ pageContext.request.contextPath }/mypage/pwCheck">내 정보 수정</a></li>
 					<li><a href="#">logout</a></li>
 				</ul>
 			</div>
