@@ -4,12 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
 
 import kr.co.together.tourfood.dao.tourfoodDAO;
 import kr.co.together.tourfood.vo.TourfoodVO;
 
-@Controller
+/*@Controller*/
 public class TourfoodController {
 	@Autowired
 	tourfoodDAO tfdao;

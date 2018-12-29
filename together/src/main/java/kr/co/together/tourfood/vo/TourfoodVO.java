@@ -1,5 +1,8 @@
 package kr.co.together.tourfood.vo;
 
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class TourfoodVO {
 	private int no;
 	private String writer;
