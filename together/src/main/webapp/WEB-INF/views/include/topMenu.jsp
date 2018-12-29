@@ -65,18 +65,18 @@
 	<header id="headerW">
 		<nav class="topMenu_nav">
 			<ul class="top_menu1">
-				<li class="top_menu"><a href="${ pageContext.request.contextPath }/resources/matching/matching.jsp">동행</a></li>
+				<li class="top_menu"><a href="${ pageContext.request.contextPath }/matching/matching">동행</a></li>
 				<!-- 동행 서브 메뉴 -->
 				<div class="to_sub_menu sub_menu1">
 					<ul class="">
-						<li class="toSub_menu"><a href="${ pageContext.request.contextPath }/resources/matching/matching.jsp">동행 글 보기</a></li>
-						<li class="toSub_menu"><a href="${ pageContext.request.contextPath }/resources/matching/accompanyWrite.jsp">동행 글 쓰기</a></li>
+						<li class="toSub_menu"><a href="${ pageContext.request.contextPath }/matching/matching">동행 글 보기</a></li>
+						<li class="toSub_menu"><a href="${ pageContext.request.contextPath }/matching/accompanyWrite">동행 글 쓰기</a></li>
 					</ul>
 					<!-- 최신 동행글 3개 -->
 					<div class="to_sub_list">
 						<!-- 동행 글 -->
 						<div class="travel_list">
-							<a href="${ pageContext.request.contextPath }/resources/matching/accompanyDetail.jsp" class="img img-2" >
+							<a href="${ pageContext.request.contextPath }/matching/accompanyDetail" class="img img-2" >
 								<p class="travel_img" style="background-image: url(${ pageContext.request.contextPath }/resources/images/image_1.jpg);">
 									<%-- <img class="" alt="여행지 사진" src="${ pageContext.request.contextPath }/resources/images/image_1.jpg"> --%>
 								</p>
@@ -86,7 +86,7 @@
 						</div><!-- end 동행 글 -->
 						<!-- 동행 글 -->
 						<div class="travel_list">
-							<a href="${ pageContext.request.contextPath }/resources/matching/accompanyDetail.jsp" class="img img-2" >
+							<a href="${ pageContext.request.contextPath }/matching/accompanyDetail" class="img img-2" >
 								<p class="travel_img" style="background-image: url(${ pageContext.request.contextPath }/resources/images/image_2.jpg);">
 									<%-- <img class="" alt="여행지 사진" src="${ pageContext.request.contextPath }/resources/images/image_1.jpg"> --%>
 								</p>
@@ -96,7 +96,7 @@
 						</div><!-- end 동행 글 -->
 						<!-- 동행 글 -->
 						<div class="travel_list">
-							<a href="${ pageContext.request.contextPath }/resources/matching/accompanyDetail.jsp" class="img img-2" >
+							<a href="${ pageContext.request.contextPath }/matching/accompanyDetail" class="img img-2" >
 								<p class="travel_img" style="background-image: url(${ pageContext.request.contextPath }/resources/images/image_3.jpg);">
 									<%-- <img class="" alt="여행지 사진" src="${ pageContext.request.contextPath }/resources/images/image_1.jpg"> --%>
 								</p>

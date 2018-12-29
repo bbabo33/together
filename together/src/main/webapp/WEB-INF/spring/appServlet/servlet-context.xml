@@ -22,10 +22,10 @@
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	
 	<!-- 현재 파일이 web-inf폴더 하위에 있지 않으므로 잠시 죽여둠  -->
-	<!-- <beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
-	</beans:bean> -->
+	</beans:bean>
 	 
 	<!--  mybatis연동위한 beans  -->
 	<beans:bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
